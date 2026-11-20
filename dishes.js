@@ -1,39 +1,70 @@
 window.menuDishes = [
   {
-    "id": "sample_spring_rolls",
-    "name": "炸越南春卷",
-    "summary": "东南亚风味，外壳酥脆，适合一起分享",
-    "category": "荤菜",
-    "servings": 2,
-    "cover": "./images/dishes/spring-rolls.png",
+    "id": "custom-f4ca281d-5b56-410e-b6de-2d7dc3d3501e",
+    "name": "干锅花菜",
+    "category": "素菜",
+    "cover": "./images/dishes/upload-0.jpg",
     "ingredients": [
       {
-        "name": "春卷皮",
-        "amount": "8",
-        "unit": "张"
+        "name": "花菜净重700g",
+        "amount": "",
+        "unit": ""
       },
       {
-        "name": "猪肉末",
-        "amount": "200",
-        "unit": "克"
+        "name": "五花肉片150g",
+        "amount": "",
+        "unit": ""
       },
       {
-        "name": "胡萝卜",
-        "amount": "半",
-        "unit": "根"
+        "name": "姜2片8g",
+        "amount": "",
+        "unit": ""
+      },
+      {
+        "name": "蒜4颗25g",
+        "amount": "",
+        "unit": ""
+      },
+      {
+        "name": "盐3g、黄酒8g、白糖3g、生抽30g、蚝油20g、老抽5g、味精3g",
+        "amount": "",
+        "unit": ""
       }
     ],
     "steps": [
       {
-        "text": "将肉末、胡萝卜碎和少许盐拌匀，静置入味。"
+        "text": "花菜掰成小块，大块可以用刀劈开，硬梗削掉皮切条"
       },
       {
-        "text": "用春卷皮包入馅料，收口处蘸少许清水。"
+        "text": "花菜接入清水放满满一茶勺盐，翻拌几下，浸泡10分钟"
       },
       {
-        "text": "中小火炸至金黄，捞出沥油后分享。"
+        "text": "姜切丝，蒜压扁切片"
+      },
+      {
+        "text": "锅里放少量油，把泡好控干水分的花菜放入翻炒，炒到整体微微发黄，部分块上带焦边，盛出备用"
+      },
+      {
+        "text": "锅中少量油，加入五花肉片，大火翻炒直至有略焦边"
+      },
+      {
+        "text": "加入姜蒜翻炒出香味，全程大火"
+      },
+      {
+        "text": "加入花菜翻炒均匀，加入一茶勺盐，炒1分多种"
+      },
+      {
+        "text": "黄酒沿着锅边淋入，继续翻炒挥发酒味"
+      },
+      {
+        "text": "加入半茶勺白糖提鲜，生抽3勺，蚝油满满1勺、一点老抽提色，翻炒均匀"
+      },
+      {
+        "text": "加入一茶勺味精提味，快速翻均出锅"
       }
-    ]
+    ],
+    "summary": "",
+    "servings": 2
   },
   {
     "id": "sample_butter_mushrooms",
@@ -72,147 +103,134 @@ window.menuDishes = [
     ]
   },
   {
-    "id": "sample_pomelo_steak",
-    "name": "柚香烤牛排",
-    "summary": "果香的清新与牛肉的油脂相互呼应",
-    "category": "荤菜",
-    "servings": 2,
-    "cover": "./images/dishes/pomelo-steak.png",
-    "ingredients": [
-      {
-        "name": "牛排",
-        "amount": "2",
-        "unit": "块"
-      },
-      {
-        "name": "柚子汁",
-        "amount": "30",
-        "unit": "毫升"
-      },
-      {
-        "name": "黑胡椒",
-        "amount": "1",
-        "unit": "小撮"
-      }
-    ],
-    "steps": [
-      {
-        "text": "牛排回温，以厨房纸吸干表面水分。"
-      },
-      {
-        "text": "煎至喜欢的熟度，静置五分钟。"
-      },
-      {
-        "text": "淋少许柚子汁，撒黑胡椒后切片。"
-      }
-    ]
-  },
-  {
-    "id": "sample_kimchi_pork",
-    "name": "奶酪泡菜香烤五花肉",
-    "summary": "酸辣泡菜配焦香五花肉，是很有满足感的一道菜",
-    "category": "荤菜",
-    "servings": 2,
-    "cover": "./images/dishes/kimchi-pork.png",
-    "ingredients": [
-      {
-        "name": "五花肉",
-        "amount": "250",
-        "unit": "克"
-      },
-      {
-        "name": "泡菜",
-        "amount": "100",
-        "unit": "克"
-      },
-      {
-        "name": "奶酪",
-        "amount": "40",
-        "unit": "克"
-      }
-    ],
-    "steps": [
-      {
-        "text": "五花肉切薄片，泡菜挤去多余汁水。"
-      },
-      {
-        "text": "肉片与泡菜拌匀，铺入烤盘并撒奶酪。"
-      },
-      {
-        "text": "烤至肉片焦香、奶酪融化即可。"
-      }
-    ]
-  },
-  {
-    "id": "sample_butter_cauliflower",
-    "name": "黄油烤花椰菜",
-    "summary": "贵州辣椒与黄油碰撞，素菜也能香喷喷",
+    "id": "custom-1a263dc6-9cba-4192-85eb-f2371c558dd1",
+    "name": "西兰花炒五花肉",
     "category": "素菜",
-    "servings": 2,
-    "cover": "./images/dishes/butter-cauliflower.png",
+    "cover": "./images/dish-placeholder.png",
     "ingredients": [
       {
-        "name": "花椰菜",
-        "amount": "半",
-        "unit": "颗"
+        "name": "五花肉 250 g",
+        "amount": "",
+        "unit": ""
       },
       {
-        "name": "黄油",
-        "amount": "20",
-        "unit": "克"
+        "name": "西兰花 1颗（约350–400 g）",
+        "amount": "",
+        "unit": ""
       },
       {
-        "name": "辣椒粉",
-        "amount": "1",
-        "unit": "小撮"
+        "name": "蒜 3瓣",
+        "amount": "",
+        "unit": ""
+      },
+      {
+        "name": "生抽 1.5勺",
+        "amount": "",
+        "unit": ""
+      },
+      {
+        "name": "老抽 1/3勺",
+        "amount": "",
+        "unit": ""
+      },
+      {
+        "name": "蚝油 1勺",
+        "amount": "",
+        "unit": ""
+      },
+      {
+        "name": "料酒 1勺",
+        "amount": "",
+        "unit": ""
+      },
+      {
+        "name": "糖 1/2小勺",
+        "amount": "",
+        "unit": ""
+      },
+      {
+        "name": "盐少许。",
+        "amount": "",
+        "unit": ""
       }
     ],
     "steps": [
       {
-        "text": "花椰菜切小朵，洗净后彻底擦干。"
+        "text": "西兰花处理：切小朵，盐水泡10分钟。水烧开后加一点盐，把西兰花焯 40–60秒，捞出沥干。"
       },
       {
-        "text": "拌入融化的黄油、盐和辣椒粉。"
+        "text": "煸五花肉：五花肉切薄片，冷锅或少油下锅，中小火慢慢煸，直到出油、边缘微焦。油太多可以倒掉一部分。"
       },
       {
-        "text": "高温烤至边缘焦黄，中途翻动一次。"
+        "text": "调味：放蒜片炒香，加料酒、生抽、老抽、蚝油和糖，翻炒均匀；再加约 50–80 mL水，盖盖烧2–3分钟。"
+      },
+      {
+        "text": "加西兰花：倒入焯好的西兰花，大火翻炒 1–2分钟，让酱汁均匀裹上。尝味后再决定是否加盐。"
+      },
+      {
+        "text": "汤汁稍微收干即可出锅。"
       }
-    ]
+    ],
+    "summary": "",
+    "servings": 2
   },
   {
-    "id": "sample_radish_pancake",
-    "name": "萝卜丝虾滑饼",
-    "summary": "清甜萝卜与鲜嫩虾滑，做成热乎乎的小饼",
-    "category": "主食",
-    "servings": 2,
-    "cover": "./images/dishes/radish-pancake.png",
+    "id": "custom-b669753d-893c-4e94-96ab-a62d9f581dd0",
+    "name": "沙县包菜",
+    "category": "素菜",
+    "cover": "./images/dishes/upload-3.jpg",
     "ingredients": [
       {
-        "name": "白萝卜",
-        "amount": "200",
-        "unit": "克"
+        "name": "包菜",
+        "amount": "",
+        "unit": ""
       },
       {
-        "name": "虾滑",
-        "amount": "150",
-        "unit": "克"
+        "name": "花椒",
+        "amount": "",
+        "unit": ""
       },
       {
-        "name": "面粉",
-        "amount": "40",
-        "unit": "克"
+        "name": "花生油",
+        "amount": "",
+        "unit": ""
+      },
+      {
+        "name": "盐、糖、味精",
+        "amount": "",
+        "unit": ""
       }
     ],
     "steps": [
       {
-        "text": "萝卜擦细丝，以少许盐抓匀后挤干。"
+        "text": "包菜去根茎撕片洗净"
       },
       {
-        "text": "加入虾滑和面粉，拌成能成形的糊。"
+        "text": "水放盐油，水开下包菜"
       },
       {
-        "text": "小火将两面煎熟，趁热食用。"
+        "text": "焯水不能超过1分钟"
+      },
+      {
+        "text": "捞出来控干水分"
+      },
+      {
+        "text": "锅里放一点花生油，一把花椒，小火慢熬"
+      },
+      {
+        "text": "花椒滋滋冒泡"
+      },
+      {
+        "text": "菜里放1.5勺盐、1勺味精"
+      },
+      {
+        "text": "花椒油浇在包菜上，搅拌均匀"
+      },
+      {
+        "text": "加1勺糖，搅拌均匀"
       }
-    ]
+    ],
+    "summary": "",
+    "servings": 2
   }
 ]
