@@ -41,7 +41,7 @@ function render() {
   $('filters').style.display = menu ? 'flex' : 'none'
   $('filters').innerHTML = categories.map((name, i) => `<button data-category="${i}" class="${category === name ? 'active' : ''}" aria-pressed="${category === name}">${escapeHtml(name)}</button>`).join('')
   $('list').innerHTML = visible.map(dish => `
-    <article><img src="${escapeHtml(dish.cover)}" alt="" loading="lazy"><section>
+    <article><button class="dish-cover" data-open="${escapeHtml(dish.id)}" aria-label="查看${escapeHtml(dish.name)}的菜谱"><img src="${escapeHtml(dish.cover)}" alt="" loading="lazy"></button><section>
     <h2><button data-open="${escapeHtml(dish.id)}">${escapeHtml(dish.name)}</button></h2>
     <p class="muted">${escapeHtml(dish.summary)}</p>
     <footer><button data-favorite="${escapeHtml(dish.id)}" aria-pressed="${favorites.has(dish.id)}">${favorites.has(dish.id) ? '♥ 已收藏' : '♡ 收藏'}</button>
