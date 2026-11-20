@@ -34,9 +34,9 @@ function render() {
     <article><button class="dish-cover" data-open="${escapeHtml(dish.id)}" aria-label="查看${escapeHtml(dish.name)}的菜谱"><img src="${escapeHtml(dish.cover)}" alt="" loading="lazy"></button><section>
     <h2><button data-open="${escapeHtml(dish.id)}">${escapeHtml(dish.name)}</button></h2>
     <p class="muted">${escapeHtml(dish.summary)}</p>
-    <footer><button data-favorite="${escapeHtml(dish.id)}" aria-pressed="${favorites.has(dish.id)}">${favorites.has(dish.id) ? '♥ 已收藏' : '♡ 收藏'}</button>
-    <button data-pick="${escapeHtml(dish.id)}" aria-pressed="${picked.has(dish.id)}">${picked.has(dish.id) ? '✓ 已选' : '＋ 选这道'}</button></footer>
-    </section></article>`).join('') || `<p class="muted">${menu ? '没有找到符合条件的菜谱。' : tab === 'favorites' ? '还没有收藏菜品。' : '还没有选菜，先去菜单挑几道吧。'}</p>`
+    <footer><button data-open="${escapeHtml(dish.id)}">查看菜谱</button><button data-favorite="${escapeHtml(dish.id)}" aria-pressed="${favorites.has(dish.id)}">${favorites.has(dish.id) ? '♥ 已收藏' : '♡ 收藏'}</button>
+    <button data-pick="${escapeHtml(dish.id)}" aria-pressed="${picked.has(dish.id)}">${picked.has(dish.id) ? '✓ 已加入清单' : '加入想吃清单'}</button></footer>
+    </section></article>`).join('') || `<p class="muted">${menu ? '没有找到符合条件的菜谱。' : tab === 'favorites' ? '还没有收藏菜品。' : '想吃清单还是空的，先去菜谱里挑几道吧。'}</p>`
   $('share').hidden = tab !== 'picked' || visible.length === 0
   $('selection').value = `我想吃这些菜：\n${visible.map(dish => `・${dish.name}`).join('\n')}`
   document.querySelectorAll('[data-tab]').forEach(button => {

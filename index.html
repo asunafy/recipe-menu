@@ -2,7 +2,7 @@
 <html lang="zh-CN">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>菜谱手账</title>
+<title>家常菜谱手账</title>
 <style>
 *{box-sizing:border-box}body{margin:0;min-height:100vh;color:#4b3828;font:16px/1.5 system-ui,sans-serif;background:radial-gradient(circle at 96% 12%,#ddefdc,transparent 36%),linear-gradient(160deg,#faf7e8,#f4f2db)}header{text-align:center;padding:17px;background:#f6f1d9;font-weight:700}main{max-width:680px;margin:auto;padding:22px 15px 110px}h1{margin:4px 0;font-size:27px}h2,p{margin:0}small{color:#087f79;font-weight:700;letter-spacing:2px}.muted{color:#786b5d;font-size:14px}form,article,nav,dialog{background:#fffaf0;border:1px solid #c4b493}form{display:flex;align-items:center;gap:8px;border-radius:30px;padding:5px 8px 5px 14px;margin:12px 0}input{flex:1;min-width:0;background:none;border:0;font:inherit;padding:5px}button{font:inherit;color:inherit;border:1px solid #c4b493;background:#fffaf0;border-radius:24px;padding:6px 14px;cursor:pointer}form button{background:#e4f8e9;color:#087f79;border:0}.active{background:#0caea6;color:white;border-color:#087f79}#filters{display:flex;overflow:auto;gap:8px;margin:0 0 16px;padding-bottom:4px;white-space:nowrap}article{display:flex;gap:12px;padding:10px;border-radius:17px;margin-bottom:13px;box-shadow:0 4px #4b38281c}article img{width:28%;max-width:124px;object-fit:cover;border-radius:12px;aspect-ratio:1}article section{flex:1;min-width:0}article h2 button{border:0;padding:0;font-size:17px;font-weight:750;text-align:left}article footer{display:flex;gap:8px;margin-top:6px}article footer button{font-size:14px}nav{position:fixed;bottom:max(10px,env(safe-area-inset-bottom));left:50%;transform:translateX(-50%);width:min(96%,650px);display:flex;gap:5px;padding:5px;border-radius:32px;box-shadow:0 3px #4b382828}nav button{flex:1;border:0}dialog{width:min(92vw,520px);max-height:85vh;border-radius:20px;color:inherit}dialog img{width:100%;max-height:250px;object-fit:cover;border-radius:12px}dialog::backdrop{background:#36291977}dialog form{justify-content:flex-end;border:0;margin:0}textarea{width:100%;min-height:95px;font:inherit}#notice{min-height:24px;margin:8px 0}
 article footer{flex-wrap:wrap}
@@ -10,14 +10,14 @@ article footer{flex-wrap:wrap}
 .dish-cover img{display:block;width:100%;max-width:none;aspect-ratio:1;object-fit:cover}
 .dish-cover:focus-visible{outline:3px solid #087f79;outline-offset:3px}
 </style>
-<header>菜谱手账</header>
+<header>家常菜谱手账</header>
 <main>
-<section id="intro"><small>把家常味道收进手账</small><h1>今天想吃点什么？</h1><p class="muted">慢慢挑一道菜，选好发到家人群。</p></section>
+<section id="intro"><small>把家常味道收进手账</small><h1>今天学做哪道菜？</h1><p class="muted">点击图片或菜名，查看食材和做法。想吃的菜，也可以加入清单。</p></section>
 <form id="search" role="search"><span aria-hidden="true">⌕</span><input id="query" type="search" aria-label="搜索菜谱" placeholder="搜索菜名或简介"><button>搜索</button></form>
 <div id="filters" aria-label="菜品分类"></div>
 <div id="list"></div><div id="share" hidden><textarea id="selection" readonly aria-label="已选菜单"></textarea><button id="copy" class="active">复制菜单</button><p id="notice" role="status"></p></div>
 </main>
-<nav aria-label="页面导航"><button data-tab="menu">▤ 菜单</button><button data-tab="favorites">♡ 收藏</button><button data-tab="picked">☷ 已选</button></nav>
+<nav aria-label="页面导航"><button data-tab="menu">▤ 菜谱</button><button data-tab="favorites">♡ 收藏</button><button data-tab="picked">☷ 想吃清单</button></nav>
 <dialog id="detail"><form method="dialog"><button>关闭</button></form><div id="recipe"></div></dialog>
 <script src="dishes.js"></script><script src="app.js"></script>
 </html>
