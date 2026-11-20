@@ -71,7 +71,7 @@ publishForm.onsubmit = async event => {
     })
     if (!result.ok) throw new Error(apiError(result.status))
     publishedBaseline = JSON.stringify(snapshot)
-    const message = '已提交到 GitHub，帽子云正在部署。请在帽子云部署记录显示成功后，查看客人版。'
+    const message = '已提交到 GitHub。等 GitHub Pages 部署完成后，即可查看客人版。'
     publishDetail.textContent = message
     document.getElementById('publish-status').textContent = message
   } catch (error) {
